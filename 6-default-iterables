@@ -1,0 +1,8 @@
+What are some default iterable in JS?
+
+String, Array, TypedArray, Map, Set, and Segments (returned by Intl.Segmenter.prototype.segment()) are all built-in iterables, 
+because each of their prototype objects implements an @@iterator method. In addition, the arguments object and some DOM collection 
+types such as NodeList are also iterables. ReadableStream is the only built-in async iterable at the time of writing.
+
+Generator functions return generator objects, which are iterable iterators. Async generator functions return async generator objects, 
+which are async iterable iterators.
